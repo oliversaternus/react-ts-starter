@@ -1,15 +1,14 @@
 import * as React from "react";
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { RouteComponentProps } from 'react-router';
-import Button from './components/Button';
-import ErrorComponent from './components/Error';
+import StartComponent from './components/Start';
 
 class App extends React.Component<RouteComponentProps> {
     public render() {
         return (
             <Switch>
-                <Route exact path="/button" component={Button}/>
-                <Route component={ErrorComponent}/>
+                <Route exact path="/page" component={StartComponent} />
+                <Route component={StartComponent} />
             </Switch>
         );
     }

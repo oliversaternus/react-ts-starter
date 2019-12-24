@@ -2,16 +2,16 @@ import * as React from "react";
 import { observer, inject } from "mobx-react";
 import SizeStore from "../stores/SizeStore";
 
-interface ErrorProps {
+interface StartProps {
   sizeStore?: SizeStore;
 }
 
 @inject("sizeStore")
 @observer
-class Error extends React.Component<ErrorProps, {}> {
+class Start extends React.Component<StartProps, {}> {
   render() {
-    return <div>Page not found!</div>;
+    return <div>Hello World!</div>;
   }
 }
 
-export default Error;
+export default Start;
